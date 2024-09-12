@@ -306,9 +306,13 @@ def main(argv):
                 report_results(np.squeeze(Y_true), Y_pred, packets, model_name_string, data_source, prediction_time,predict_writer)
                 
                 # Here we print the identifiers of the first 10 DDoS flows
-                for index in range(min(10,len(keys))):
+                i = 0                    
+                for index in range(len(keys)):
                     if(Y_pred[index] == True):
                         print(keys[index])
+                        i = i+1
+                    if i == 10: #print max 10 predictions
+                        break
 
                 predict_file.flush()
 
