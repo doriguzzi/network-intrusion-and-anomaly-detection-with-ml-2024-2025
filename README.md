@@ -49,7 +49,7 @@ sudo apt install tshark
 
 In macOS, just download ```Wireshark``` from [here](https://www.wireshark.org/download.html) and install it.
 
-Please note that the current parser code works with ```tshark``` **version 3.2.3 or lower** or **version 3.6 or higher**. Issues have been reported when using intermediate releases such as 3.4.X.
+Please note that the current parser code works with ```wireshark```/```tshark``` **version 3.6.X**.
 
 ## Executing the code
 For Jupyter-based laboratories, first start Jupyter from the terminal:
